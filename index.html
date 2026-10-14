@@ -1,3 +1,8 @@
+<!--
+    Home Page
+    The main page of the website.
+-->
+
 <!DOCTYPE html>
 
 
@@ -5,34 +10,111 @@
 
     <head>
         
+        <!-- Charset -->
         <meta charset = "UTF-8">
+        
+        <!-- Viewport -->
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <!-- Page Title -->
         <title>Roman Tudor</title>
 
-        <link rel = "icon" type = "image/png" href = "./favicon.png">
-        <link rel = "stylesheet" href = "./style.css">
+        <!-- Favicon -->
+        <link rel = "icon" type = "image/png" href = "./images/favicon.png">
+        
+        <!-- Stylesheet -->
+        <link rel = "stylesheet" href = "./styles/style.css">
 
     </head>
 
     <body>
         
+        <!-- Header -->
         <header>
 
-            <nav>
-                <a href = "./index.html">Home</a>
-                <a href = "./contact.html">Contact</a>
+            <nav class = "navbar" aria-label = "Main navigation">
+
+                <a class = "brand" href = "./index.html">
+
+                    <!-- Profile Picture -->
+                    <img
+                        class = "profile-picture"
+                        src = "./images/profile_picture.png"
+                        alt = "Portrait of Roman Tudor"
+                    >
+
+                    <!-- Name -->
+                    <span class = "brand-name">Roman Tudor</span>
+                
+                </a>
+
+                <!-- Navigation Links -->
+                <div class = "nav-links">
+
+                    <a href = "./index.html" aria-current = "page">Home</a>
+                    <a href = "./pages/aboutme.html" aria-current = "page">About Me</a>
+                    <a href = "./pages/work.html" aria-current = "page">Work</a>
+                    <a href = "./pages/education.html" aria-current = "page">Education</a>
+                    <a href = "./pages/contact.html" aria-current = "page">Contact</a>
+                    
+                </div>
+
             </nav>
         
         </header>
 
+        <!-- Main Content -->
         <main>
-            <h1>Hello, I'm Roman Tudor!</h1>
-            <p>Welcome to my personal website!</p>
-            <p>Here, you can learn more about me and my interests.</p>
+
+            <!-- Hero Banner -->
+            <section class = "hero-banner" aria-label = "Homepage banner">
+
+                <img
+                    src = "./images/banner.jpg"
+                    alt = "A panoramic view representing my personal interests"
+                >
+
+            </section>
+
+            <!-- Introduction -->
+            <section class = "intro">
+
+                <p class = "eyebrow">Welcome to my website!</p>
+
+                <h1>Hello, I'm Roman!</h1>
+
+                <p class = "intro-text">
+                    Welcome to my personal website!
+                    Here you can learn more about me,
+                    explore my work, and get in touch.
+                </p>
+
+                <a class = "primary-button" href = "./pages/contact.html">
+                    Get in touch
+                </a>
+
+            </section>
+
+            <!-- About -->
+            <section class = "about">
+
+                <h2>A little about me</h2>
+                
+                <p>
+                    This is where I'll share more about my background,
+                    interests, skills, and goals.
+                </p>
+            
+            </section>
+
         </main>
 
+        <!-- Footer -->
         <footer>
+
+            <!-- Copyright -->
             <p>&copy; 2026 Roman Tudor</p>
+        
         </footer>
 
     </body>
